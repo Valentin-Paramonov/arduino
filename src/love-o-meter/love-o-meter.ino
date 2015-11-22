@@ -5,7 +5,7 @@ void setup() {
   Serial.begin(9600);
   for (int pinNumber = 3; pinNumber < 6; pinNumber++) {
     pinMode(pinNumber, OUTPUT);
-    digitalWrite(pinNumber, LOW);
+    turnOffLed(pinNumber);
   }
 }
 
